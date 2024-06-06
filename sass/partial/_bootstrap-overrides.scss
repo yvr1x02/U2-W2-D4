@@ -10,6 +10,15 @@ $btn-padding-x: 2.5rem;
 $btn-padding-y: 0.7rem;
 $grid-gutter-width:0.5rem;
 
+$danger: #ff0077;
+$info:  #00ffea;
+$light: #f3eeff;
+
+$epicode1: #5726c3;
+$epicode2:#8625a5;
+$epicode3: #cb2376;
+
+
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/scss/variables";
@@ -43,6 +52,19 @@ $custom-border-widths: (
 
 $border-widths: map-merge($border-widths , $custom-border-widths );
 
+$card-bg: $dark;
+$card-color: $info;
+$card-border-radius: 2rem;
+$badge-border-radius:2rem;
+$btn-border-radius:2rem;
+
+$EPICODE:(
+    "epicode-1": $epicode-1,
+    "epicode-2": $epicode-2,
+    "epicode-3": $epicode-3
+);
+
+$theme-colors:map-merge($theme-colors , $EPICODE );
 
 
 // 5. Include remainder of required parts
